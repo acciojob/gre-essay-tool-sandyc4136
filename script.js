@@ -5,7 +5,7 @@ const h3Element=document.querySelector('#wordCount');
 function handleInput(e){
 	const sentence=e.target.value;
 	let match=0;
-	if(sentence.trim()===""){
+	if(sentence.trim()==""){
 		match=0;
 	}else{
 		match = sentence.match(/\S+/ig).length;
