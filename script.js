@@ -1,10 +1,10 @@
 //your code here
-const inputElement=document.querySelector('#sentence');
-const count=document.querySelector('#countDiv');
+const inputElement=document.querySelector('#evaluatedText');
+const count=document.querySelector('#wordCount');
 
 function handleInput(e){
 	const sentence=e.target.value;
 	const countWord=sentence.split(" ").length;
-	count.innerText=countWord-1;
+	count.innerText=countWord;
 }
 inputElement.addEventListener('input',handleInput);
